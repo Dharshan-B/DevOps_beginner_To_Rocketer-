@@ -27,6 +27,15 @@ Distributes incoming traffic across multiple servers to ensure high availability
 - `telnet` / `nc` (Netcat): Check if a specific port is open.
 
 ## 📝 Exercises: Network Detective
+
+### 🕹️ Interactive Lab (Recommended)
+Put your detective hat on! I've created a series of missions for you to solve using the Linux command line.
+
+1. **Start the Mission**: Run `bash exercises/networking_lab.sh`.
+2. **Solve**: Use the hints in the script to find the answers using your terminal.
+3. **Verify**: Run `bash exercises/networking_verify.sh` and answer the questions to see if you got them right!
+
+### Manual Tasks
 1. **Connectivity**: Ping `8.8.8.8` (Google DNS). Does it respond?
 2. **DNS Lookup**: Use `nslookup` to find the IP address of `github.com`.
 3. **HTTP Header**: Use `curl -I https://www.google.com` and identify the Server header.
