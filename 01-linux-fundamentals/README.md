@@ -35,9 +35,18 @@ Linux is the backbone of the internet. Most servers, containers, and cloud infra
 - **CentOS/RHEL**: `sudo yum install <package>`
 
 ## 📝 Exercises: Linux Power User
+
+### 🕹️ Interactive Lab (Recommended)
+Before starting the manual exercises, I have provided scripts to help you practice in a controlled environment.
+
+1. **Setup**: Run `bash exercises/lab_setup.sh`. This will create a `linux-lab-playground` folder.
+2. **Practice**: Go into the playground and try to move files, change permissions of `secrets.txt`, and find hidden files.
+3. **Verify**: Once you finish the manual exercises below, run `bash exercises/verify_lab.sh` to check your work!
+
+### Manual Tasks
 1. **Navigating**: Go to your home directory, create a folder named `devops-lab`, and inside it create an empty file named `test.txt`.
 2. **Text Editing**: Use `nano` or `vi` to write "Hello DevOps" inside `test.txt`.
-3. **Permissions**: Change the permissions of `test.txt` so that only the owner can read and write it (No permissions for anyone else).
+3. **Permissions**: Change the permissions of `test.txt` so that only the owner can read and write it (`chmod 600 test.txt`).
 4. **Process Hunting**: Run a long-running command like `sleep 100 &`. Find its Process ID (PID) using `ps` and kill it using `kill <PID>`.
 5. **Log Analysis**: View the last 10 lines of `/var/log/syslog` (or any log file you have access to).
 
