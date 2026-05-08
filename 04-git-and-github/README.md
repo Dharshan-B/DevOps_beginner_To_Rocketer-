@@ -32,6 +32,15 @@ Version control is the foundation of CI/CD. Without Git, you cannot have automat
 - Use `.gitignore`.
 
 ## 📝 Exercises: Git Master
+
+### 🕹️ Professional Workflow (Recommended)
+You know how to push code; now learn how to manage it like a pro.
+
+1. **The Missions**: Open [exercises/git_pro_challenges.md](exercises/git_pro_challenges.md) for your 3 advanced tasks.
+2. **Conflict Practice**: Run `bash exercises/setup_conflict.sh` and try to solve the mess!
+3. **Automate Quality**: Use the template in `exercises/pre-commit-template.sh` to set up your first Git Hook.
+
+### Manual Tasks
 1. **Init**: Initialize a git repository in a new folder.
 2. **Commit**: Create a file, add it to the staging area, and commit it.
 3. **History**: Change the file and commit again. Use `git log` to see your history.
@@ -40,3 +49,5 @@ Version control is the foundation of CI/CD. Without Git, you cannot have automat
 
 ---
 *Next Step: [05 - Docker Containers](../05-docker-containers)*
+
+----

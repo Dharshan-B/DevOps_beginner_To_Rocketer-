@@ -2,6 +2,10 @@
 
 Linux is the backbone of the internet. Most servers, containers, and cloud infrastructures run on Linux. To be a DevOps Engineer, you must be comfortable with the command line.
 
+## 📖 Full Documentation
+> [!IMPORTANT]
+> For a deep dive into everything Linux, from file systems to advanced networking, check out the **[Complete Linux Mastery Guide](./LINUX_GUIDE.md)**.
+
 ## 📖 Key Concepts
 
 ### 1. The Linux File System Hierarchy
@@ -49,6 +53,15 @@ Before starting the manual exercises, I have provided scripts to help you practi
 3. **Permissions**: Change the permissions of `test.txt` so that only the owner can read and write it (`chmod 600 test.txt`).
 4. **Process Hunting**: Run a long-running command like `sleep 100 &`. Find its Process ID (PID) using `ps` and kill it using `kill <PID>`.
 5. **Log Analysis**: View the last 10 lines of `/var/log/syslog` (or any log file you have access to).
+
+---
+
+### 🚀 Level Up: Rocketer Challenges
+Ready for more? These advanced missions will test your ability to chain commands and troubleshoot systems.
+
+1. **Go to Challenges**: Open **[rocketer_challenges.md](./exercises/rocketer_challenges.md)**.
+2. **Setup**: Run `bash exercises/lab_setup.sh` again to generate the advanced lab data.
+3. **Verify**: Use the same `bash exercises/verify_lab.sh` to check your work.
 
 ---
 *Next Step: [02 - Networking Basics](../02-networking-basics)*

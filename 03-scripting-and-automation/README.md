@@ -30,6 +30,15 @@ fi
 ```
 
 ## 📝 Exercises: The Automator
+
+### 🕹️ Interactive Lab (Recommended)
+Stop being a manual user! Build your first automation tools with these 3 challenges.
+
+1. **Read the Mission**: Open [exercises/automation_challenges.md](exercises/automation_challenges.md) to see your 3 bot missions.
+2. **Build**: Create your `.sh` scripts in the `03-scripting-and-automation` folder.
+3. **Test**: Run `bash exercises/test_automation.sh` to see if your bots pass the quality test!
+
+### Manual Tasks
 1. **Hello Script**: Create a script `greet.sh` that takes a name as an argument and prints "Hello [Name], welcome to DevOps!".
 2. **Backup Script**: Write a script `backup.sh` that copies all files from a folder named `data` to a folder named `backup_[date]`.
 3. **Looping**: Write a script that creates 10 empty files named `file1.txt`, `file2.txt`, etc.

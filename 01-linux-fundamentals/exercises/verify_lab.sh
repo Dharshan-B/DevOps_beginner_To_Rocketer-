@@ -34,5 +34,30 @@ if [ -f "../devops-lab/test.txt" ]; then
     fi
 fi
 
+echo "--- ROCKETER MISSIONS ---"
+
+# Mission 6: Log Filter
+if [ -f "linux-lab-playground/errors_only.txt" ]; then
+    grep -q "ERROR" "linux-lab-playground/errors_only.txt"
+    RES=$?
+    # Ensure no INFO lines are in there
+    grep -q "INFO" "linux-lab-playground/errors_only.txt"
+    if [ $RES -eq 0 ] && [ $? -ne 0 ]; then
+        check_status 0 "Mission 6: 'errors_only.txt' filtered correctly"
+    else
+        check_status 1 "Mission 6: 'errors_only.txt' exists but is not filtered correctly"
+    fi
+else
+    check_status 1 "Mission 6: 'errors_only.txt' not found"
+fi
+
+# Mission 8: Cleanup
+TMP_COUNT=$(find linux-lab-playground -name "*.tmp" | wc -l)
+if [ $TMP_COUNT -eq 0 ]; then
+    check_status 0 "Mission 8: All .tmp files cleaned up"
+else
+    check_status 1 "Mission 8: Still found $TMP_COUNT .tmp files"
+fi
+
 echo "---"
-echo "Keep going! If you get all green checkmarks, you've mastered the basics! 🚀"
+echo "Keep going! If you get all green checkmarks, you've reached Rocketer status! 🚀"
